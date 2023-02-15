@@ -1,0 +1,184 @@
+
+:root{
+    --primery-color: hsl(300, 43%, 22%);
+    --secondary-color: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* ************************ */
+/* RESETS */
+/* ************************ */
+*,
+::before,
+::after{
+    ox-sizing: border-box;
+
+}
+
+
+/* ************************ */
+/* Globle Style */
+/* ************************ */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Spartan", sans-serif;
+    font-size: 16px;
+}
+main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 10px;
+    background-color: var(--light-grayish-magenta);
+}
+h1{
+    font-size: 3rem;
+}
+p{
+    line-height: 24px;
+}
+
+/* ************************ */
+/* Main Styles */
+/* ************************ */
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    padding: 40px;
+    background-color: var(--white);
+}
+.top-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 40px;
+}
+.main-text{
+    color: var(--primery-color);
+    padding:10px;
+    max-width: 430px;
+}
+
+
+/* ************************ */
+/* Rate Styles */
+/* ************************ */
+
+.ratings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rating{
+    background-color: var(--light-grayish-magenta);
+    padding: 17px 30px;
+    margin: 10px;
+    border-radius: 0.5em;
+    color: var(--primery-color);
+    font-weight: 700;
+    width: 350px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+}
+.rating-2{
+    margin-left: 100px;
+}
+.rating-3{
+    margin-left: 200px;
+}
+
+/* ************************ */
+/* Feedback Styles */
+/* ************************ */
+
+.bottom-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buyer{
+    color: var(--light-grayish-magenta);
+    background-color: var(--primery-color);
+    padding: 15px 30px;
+    border-radius: 0.5em;
+    max-width: 340px;
+    margin-right: 30px;
+} 
+.buyer-pro-box{
+    display: flex;
+    align-items: center;
+}
+.buyer-pro-box img{
+    border-radius: 50%;
+    width: 4rem;
+    margin-right: 1rem;
+}
+.buyer h4{
+    line-height: 1.5rem
+}
+.buyer h4 span{
+    display: block;
+}
+.buyer .feedback{
+    grid-column: span 2;
+    margin-top: 20px;
+}
+
+.buyer-2 {
+  position: relative;
+  top: 20px;
+}
+
+.buyer-3 {
+  position: relative;
+  top: 40px;
+}
+.verified {
+  color: #ee68a4;
+}
+
+/* ************************ */
+/* Mobile version */
+/* ************************ */
+
+@media only screen and (max-width: 1300px){
+    .rating{
+        margin: 11px 0;
+    }
+    .buyer{
+        top: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .wrapper{
+        padding: 10px;
+        max-width: 335px;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .main-text h1{
+      font-size: 2.6em;
+    }
+    .stars{
+        margin-bottom: 5px;
+    }
+    .rating{
+        max-width: 310px;
+        margin: 9px 0;
+        display: grid;
+        padding: 13px;
+    }
+    .buyer{
+       margin: 0;
+       text-align: left;
+    }
+}
