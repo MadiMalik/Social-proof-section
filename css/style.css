@@ -50,7 +50,7 @@ p{
     flex-direction: column;
     justify-content: center;
     max-width: 1390px;
-    padding: 20px;
+    padding: 20px 40px;
     background-color: var(--white);
 }
 .top-wrapper{
