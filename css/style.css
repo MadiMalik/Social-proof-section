@@ -49,8 +49,8 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1370px;
-    padding: 40px;
+    max-width: 1390px;
+    padding: 30px;
     background-color: var(--white);
 }
 .top-wrapper{
